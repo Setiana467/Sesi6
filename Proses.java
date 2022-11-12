@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Proses {
     public static void main(String[] args) {
         Laptop ideapad = new Lenovo();
-        LaptopUser andri = new LaptopUser(ideapad);
+        User andri = new User(ideapad);
         
         Scanner in = new Scanner(System.in);
         System.out.println("Menggunakan laptop");
@@ -22,7 +22,7 @@ public class Proses {
         
     }
     
-    public static void gunakanLaptop(LaptopUser laptop, String input){
+    public static void gunakanLaptop(User laptop, String input){
         if(input.equals("ON")){
             laptop.turnOnLaptop();
         }
